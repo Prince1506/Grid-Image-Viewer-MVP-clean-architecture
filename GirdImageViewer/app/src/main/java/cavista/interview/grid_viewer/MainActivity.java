@@ -1,8 +1,9 @@
-package com.example.galleryactivity;
-gg
+package cavista.interview.grid_viewer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.galleryactivity.R;
 
 public class MainActivity extends AppCompatActivity {
 

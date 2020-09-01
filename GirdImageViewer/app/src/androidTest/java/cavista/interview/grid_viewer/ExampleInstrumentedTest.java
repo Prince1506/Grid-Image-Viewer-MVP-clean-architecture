@@ -1,4 +1,4 @@
-package com.example.galleryactivity;
+package cavista.interview.grid_viewer;
 
 import android.content.Context;
 
