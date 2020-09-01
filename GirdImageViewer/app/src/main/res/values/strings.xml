@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">GalleryActivity</string>
+    <string name="loading">Loading...</string>
+    <string name="dash">-</string>
+
+    <string name="server_error_new_title">something went wrong!</string>
+    <string name="server_error_new_msg">Oh no, an unexpected error has occurred:</string>
+
+    <string name="internet_error_title">NO INTERNET CONNECTION!</string>
+    <string name="internet_error_msg">No internet connection detected:</string>
+    <string name="OK">Ok</string>
+    <string name="GOTIT">got it!</string>
+
+    <string name="suspended">SUSPENDED</string>
+    <string name="CHECK_SETTINGS">SETTINGS</string>
+    <string name="SUB_INET">Please check your connection and try again.</string>
+
 </resources>

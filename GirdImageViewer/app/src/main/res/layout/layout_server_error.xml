@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_server_error_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sign_in_background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layout_grad"
+                android:layout_height="170dp"
+                android:elevation="10dp"
+                android:clipToPadding="false"
+                android:background="@drawable/inactive_account_gradient_new"
+                android:layout_centerInParent="true"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:id="@+id/iv_server_error_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"/>
+
+                <cavista.interview.grid_viewer.core.base.view.HelveticaTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_server_error_title"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_server_error_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/small"
+                    android:layout_marginRight="@dimen/small"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Something went wrong!"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/layout_grad"
+            android:background="@drawable/rounded_corner">
+
+            <cavista.interview.grid_viewer.core.base.view.HelveticaTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_server_error_msg"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="oh no, an unexpected error has occured"
+                android:textColor="@color/emperor"
+                android:textSize="16sp" />
+
+            <cavista.interview.grid_viewer.core.base.view.HelveticaTextView
+                android:id="@+id/lbl_sub_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="Please try again now or in a few minutes."
+                android:textColor="@color/emperor"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/bt_server_error_ok"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/rounded_black"
+                android:elevation="@dimen/small"
+                android:visibility="visible"
+                tools:targetApi="lollipop">
+
+
+                <cavista.interview.grid_viewer.core.base.view.HelveticaTextView
+                    android:id="@+id/login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:drawablePadding="20dp"
+                    android:elevation="@dimen/small"
+                    android:paddingEnd="27dp"
+                    android:text="CLOSE"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="lollipop" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/huge"
+                        android:layout_height="@dimen/huge"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toEndOf="@id/login_text"
+                        android:tintMode="multiply"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/black_right_arrow" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bt_ret"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/bt_server_error_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/button_outline_black"
+                android:elevation="@dimen/small"
+                android:visibility="gone"
+                tools:targetApi="lollipop">
+
+
+                <cavista.interview.grid_viewer.core.base.view.HelveticaTextView
+                    android:id="@+id/login_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:drawablePadding="20dp"
+                    android:elevation="@dimen/small"
+                    android:paddingEnd="27dp"
+                    android:text="@string/dash"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:targetApi="lollipop" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/huge"
+                        android:layout_height="@dimen/huge"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toEndOf="@id/login_text"
+                        android:src="@drawable/black_right_arrow" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
